@@ -1,0 +1,20 @@
+
+POST http://localhost:3000/client/signup 
+Content-Type: application/json
+
+{
+    "name" : "Leandro",
+    "email" : "le0406@hotmail.com",
+    "password" : "12315678",
+    "cpf" : "67338912132"
+}
+
+###
+
+POST http://localhost:3000/client/login 
+Content-Type: application/json
+
+{
+    "email" : "le0406@hotmail.com",
+    "password" : "12315678"
+}
