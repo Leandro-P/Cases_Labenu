@@ -1,4 +1,4 @@
-import { Client, ClientLogin } from "../Models/clients";
+import { Client } from "../Models/clients";
 import BaseDatabase from "./BaseDatabase";
 
 export class ClientDatabase extends BaseDatabase {
@@ -14,10 +14,10 @@ export class ClientDatabase extends BaseDatabase {
     });
   };
 
-  public clientLogin = async (email:string)=>{
+  public clientLogin = async (email: string) => {
     const result = await ClientDatabase.connection(ClientDatabase.table)
-    .select()
-    .where({ email})
-    return result[0]
-  }
+      .select()
+      .where({ email });
+    return result[0];
+  };
 }

@@ -9,3 +9,4 @@ export class InvalidRequest extends CustomError {
         super(400, "Incorrect data");
     }
 };
+

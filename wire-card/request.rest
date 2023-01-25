@@ -1,12 +1,12 @@
-
+###
 POST http://localhost:3000/client/signup 
 Content-Type: application/json
 
 {
-    "name" : "Leandro",
-    "email" : "le0406@hotmail.com",
-    "password" : "12315678",
-    "cpf" : "67338912132"
+    "name" : "Sandra",
+    "email" : "Sandra@hotmail.com",
+    "password" : "123156781",
+    "cpf" : "77338912132"
 }
 
 ###
@@ -18,3 +18,22 @@ Content-Type: application/json
     "email" : "le0406@hotmail.com",
     "password" : "12315678"
 }
+
+###
+POST http://localhost:3000/payment/create-payment
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6eyJpZCI6ImRjY2NjOGE2LWY1ZWMtNDQ4OS04NGMyLTllOGQ0MGQ4ZjJkMCJ9LCJpYXQiOjE2NzQ2MTAwMjcsImV4cCI6MTY3NDYxNzIyN30.C_qw938Vxx6CTBLstu8UAQV7zR-_f4sEDOZQ1gYQUBk
+
+{
+    "clientId" : "dcccc8a6-f5ec-4489-84c2-9e8d40d8f2d0", 
+    "method" : "BANK_SLIP", 
+    "amount" : 500, 
+    "cardHolderName" : "", 
+    "cardNumber" : "", 
+    "cardExpDate" : "", 
+    "cardCvv" : ""
+}
+
+###
+GET http://localhost:3000/payment/get-payments
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6eyJpZCI6ImRjY2NjOGE2LWY1ZWMtNDQ4OS04NGMyLTllOGQ0MGQ4ZjJkMCJ9LCJpYXQiOjE2NzQ2MTAwMjcsImV4cCI6MTY3NDYxNzIyN30.C_qw938Vxx6CTBLstu8UAQV7zR-_f4sEDOZQ1gYQUBk
